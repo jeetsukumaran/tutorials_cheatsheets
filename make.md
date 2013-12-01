@@ -1,6 +1,5 @@
 
 
-
 - use build manager to automate processes
 - describe the dependencies (and updates) in a 'build file'
 - in Linux: GNU Make
@@ -8,7 +7,7 @@
 
 
 ##example makefile: single.mk (executing on default action)
-	<pre>
+	
 	# test.mk		(# for comments)
 	
 	# target : prerequisite	(runs if prerequisite is newer than target)
@@ -16,14 +15,14 @@
 	
 	my_fig.pdf	 : my_fig.ps		
 		ps2pdf my_fig.ps > my_fig.pdf
-	</pre>
+	
 	
 ####running the makefile
 `$bash> gmake -f single.mk`
 
 	
 
-##example makefile: multi1.mk (executing all actions at once)		<pre>
+##example makefile: multi1.mk (executing all actions at once)	
 
 	#phony_target : dependencies
 
@@ -38,12 +37,12 @@
 	fig2.pdf : fig2.ps		
 		ps2pdf fig2.ps > fig2.pdf
 	
-	</pre>
+
 ####running the makefile
 `$bash> gmake -f multi1.mk`
 
 
-##example makefile: multi2.mk (executing all actions at once)		<pre>
+##example makefile: multi2.mk (executing all actions at once)		
 
 	
 	# target : prerequisite	(runs if prerequisite is newer than target)
@@ -62,12 +61,12 @@
 	# result.txt : input1-*.txt
 		
 	
-	</pre>
+	
 ####running the makefile
 `$bash> gmake -f multi2.mk`
 
 
-##example makefile: multi3.mk (executing all actions at once)		<pre>
+##example makefile: multi3.mk (executing all actions at once)		
 
 	SCRIPT_DIR=~/scripts		# define a macro
 	include more_macros.mk		# imports more macros if needed
@@ -83,7 +82,7 @@
 	
 		
 	
-	</pre>
+
 ####running the makefile
 `$bash> gmake -f multi3.mk`
 
