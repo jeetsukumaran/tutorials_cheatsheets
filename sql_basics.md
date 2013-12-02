@@ -20,8 +20,8 @@ Sort
 	SELECT mycolname1, mycolname2 FROM mytable;
 	SELECT DISTINCT mycolname1 FROM mytable; (excl. duplication in the selected column)
 	SELECT * FROM mytable;			(all columns)
-	SELECT *, mycol2*2 FROM mytable;	(doubles val. in mycol2 and appends col.)
-	SELECT *, ROUND(mycol2*2, 2) FROM mytable;	(rounds to 2 dec. places)
+	SELECT * , mycol2*2 FROM mytable;	(doubles val. in mycol2 and appends col.)
+	SELECT * , ROUND(mycol2*2, 2) FROM mytable;	(rounds to 2 dec. places)
 </pre>
 
 ##2 - Join
