@@ -45,7 +45,7 @@ Sort
 ##4 - Append
 - adds new fields
 <pre>
-	ALTER TABLE my_db ADD COLUMN 'new_var' TEXT
+	ALTER TABLE my_db ADD COLUMN 'new_var' TEXT;
 </pre>
 
 ##5 - Aggregate
@@ -68,7 +68,7 @@ Sort
 ## Missing Data
 - missing data records for particular columns is handled as NULL
 <pre>
-	SELECT * FROM tb WHERE col2 != 1 OR col2 is NULL
-	SELECT * FROM tb WHERE col2 IS NULL 	(note that '=' doesn't work)
-	SELECT * FROM tb WHERE col2 IS NOT NULL 
+	SELECT * FROM tb WHERE col2 != 1 OR col2 is NULL;
+	SELECT * FROM tb WHERE col2 IS NULL; 	(note that '=' doesn't work)
+	SELECT * FROM tb WHERE col2 IS NOT NULL; 
 </pre>
