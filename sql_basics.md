@@ -43,6 +43,9 @@ Sort
 	
 ##4 - Append
 - adds new fields
+<pre>
+	ALTER TABLE my_db ADD COLUMN 'new_var' TEXT
+</pre>
 
 ##5 - Aggregate
 - summarizes records into new records
