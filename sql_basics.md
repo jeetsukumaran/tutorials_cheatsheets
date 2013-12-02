@@ -56,8 +56,8 @@ Sort
             (SELECT my_var2 FROM my_db WHERE id = id_val)
           );
 </pre>
-This will set the value for my_var1.   
-a) If the id is already in the database, my_var2 will not be changed. 
+This will set the value for my_var1.<br>   
+a) If the id is already in the database, my_var2 will not be changed.<br>
 b) If the id is not in the database, my_var2 will set to NULL
 
 <pre>
@@ -67,8 +67,8 @@ b) If the id is not in the database, my_var2 will set to NULL
             COALESCE((SELECT my_var2 FROM my_db WHERE id = id_val), 'some_default')
           );
 </pre>
-This will set the value for my_var1.   
-a) If the id is already in the database, my_var2 will not be changed. 
+This will set the value for my_var1.<br>   
+a) If the id is already in the database, my_var2 will not be changed.<br>
 b) If the id is not in the database, my_var2 will set to "some_default"
 
 
