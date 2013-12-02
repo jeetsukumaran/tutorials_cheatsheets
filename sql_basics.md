@@ -9,7 +9,7 @@ Rows = Records
 Select  
 Join  
 Filter  
-Append  
+Append/Update  
 Aggregate  
 Sort
 
@@ -42,11 +42,36 @@ Sort
 	SELECT id, proj, SUM(col1) FROM tb GROUP BY id, proj;
 </pre>
 	
-##4 - Append
-- adds new fields
+##4 - Append/Update
+- add a new field
 <pre>
 	ALTER TABLE my_db ADD COLUMN 'new_var' TEXT;
 </pre>
+
+- update records or add new records if they don't exist yet
+<pre>
+	INSERT OR REPLACE INTO my_db (id, my_var1, my_var2) 
+  VALUES (  id_val, 
+            my_var1_val,
+            (SELECT my_var2 FROM my_db WHERE id = id_val)
+          );
+</pre>
+This will set the value for my_var1.   
+a) If the id is already in the database, my_var2 will not be changed. 
+b) If the id is not in the database, my_var2 will set to NULL
+
+<pre>
+	INSERT OR REPLACE INTO my_db (id, my_var1, my_var2) 
+  VALUES (  id_val, 
+            my_var1_val,
+            COALESCE((SELECT my_var2 FROM my_db WHERE id = id_val), 'some_default')
+          );
+</pre>
+This will set the value for my_var1.   
+a) If the id is already in the database, my_var2 will not be changed. 
+b) If the id is not in the database, my_var2 will set to "some_default"
+
+
 
 ##5 - Aggregate
 - summarizes records into new records
