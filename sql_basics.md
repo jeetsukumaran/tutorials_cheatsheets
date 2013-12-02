@@ -48,7 +48,14 @@ Sort
 	ALTER TABLE my_db ADD COLUMN 'new_var' TEXT;
 </pre>
 
-- update records or add new records if they don't exist yet
+- update existing records (no insert if primary key doesn't exist)
+
+<pre>
+	UPDATE my_db SET my_var=2 WHERE id=1;
+
+</pre>
+
+- update records or add new records if they don't exist yet (NOTE: `id` must be primary key here!)
 <pre>
 	INSERT OR REPLACE INTO my_db (id, my_var1, my_var2) 
   VALUES (  id_val, 
