@@ -1,8 +1,9 @@
 SQL: Structured Query Language
 
-Database = Table
-Columns = Fields
-Rows = Records
+# Nomenclature
+Database = Table  
+Columns = Fields  
+Rows = Records  
 
 # 6 basic operations: 
 Select  
