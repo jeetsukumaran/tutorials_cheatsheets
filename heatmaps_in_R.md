@@ -15,14 +15,14 @@ I chose R, because it is one of the most popular free statistical software packa
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Optional: Saving the heat map as PNG file](#png)<br>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Plotting the heat map](#plotting)<br>
 
-The files that I used can be downloaded from here:<br>
+<b>The files that I used can be downloaded from here:</b><br>
 Example dataset: [heatmaps_in_r.csv](https://raw.github.com/rasbt/tutorials_cheatsheets/master/datasets/heatmaps_in_r.csv)<br>
 R script: [heatmaps_in_r.R](https://raw.github.com/rasbt/tutorials_cheatsheets/master/scripts/heatmaps_in_r.R)<br>
 
 
 ![heatmap.png](./images/heatmaps_in_r.png "heatmap.png")
 
-Following this paragraph you see the whole shebang so that you know what you are dealing with: An R script that uses R's `gplot` package to create heat maps via the `heatmap.2()` function . It might look gargantuan considering that we "only" want to create a simple heat map, but don't worry, many of the parameters are not required, and I will discuss the details in the following sections.  
+Following this paragraph you see the whole shebang so that you know what you are dealing with: An R script that uses R's `gplot` package to create heat maps via the `heatmap.2()` function. It might look gargantuan considering that we "only" want to create a simple heat map, but don't worry, many of the parameters are not required, and I will discuss the details in the following sections.  
 
 <a name="script"></a>
 # Script overview
@@ -41,7 +41,6 @@ if (!require("gplots")) {
    library(RColorBrewer)
    }
 
-
 #########################################################
 ### B) Reading in data and transform it into matrix format
 #########################################################
@@ -50,7 +49,6 @@ data <- read.csv("../datasets/heatmaps_in_r.csv", comment.char="#")
 rnames <- data[,1]                            # assign labels in column 1 to "rnames"
 mat_data <- data.matrix(data[,2:ncol(data)])  # transform column 2-5 into a matrix
 rownames(mat_data) <- rnames                  # assign row names 
-
 
 #########################################################
 ### C) Customizing and plotting the heat map
