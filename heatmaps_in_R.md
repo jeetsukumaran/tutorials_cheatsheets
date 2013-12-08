@@ -160,7 +160,7 @@ Finally, we have our data in the "right" format in order to create our heat map,
 
 Instead of using the default colors of the `heatmap.2()` function, I want to show you how to use the `RColorBrewer` package for creating our own color palettes. Here, we go with the most popular choice for heat maps: A color range from green over yellow to red.
 <pre>my_palette &lt;- colorRampPalette(c("red", "yellow", "green"))(n = 299)</pre>
-There are many different ways to specify colors in R. I find it most convenient to assign colors by their name. A nice overview of the different color names in R can be found (here)[http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf]  
+There are many different ways to specify colors in R. I find it most convenient to assign colors by their name. A nice overview of the different color names in R can be found at <a href="http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf">http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf</a>  
 
 The argument `(n = 299)` lets us define how many individuals colors we want to have in our palette. Obviously, the higher the number of individual colors, the smoother the transition will be; the number 299 should be sufficiently large enough for a smooth transition.  
 By default, RColorBrewer will divide the colors evenly so that every color in our palette will be an interval of individual colors of similar size. However, sometimes we want to have a little skewed color range depending on the data we are analyzing. 
