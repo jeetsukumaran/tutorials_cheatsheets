@@ -27,7 +27,7 @@ Following this paragraph you see the whole shebang so that you know what you are
 <a name="script"></a>
 # Script overview
 
-<pre>
+
 <blockquote>
 	#########################################################
 	### A) Installing and loading required packages
@@ -84,7 +84,7 @@ Following this paragraph you see the whole shebang so that you know what you are
 
 	dev.off()               # close the PNG device
 </blockquote>
-</pre>
+
 [(download the script)](https://raw.github.com/rasbt/tutorials_cheatsheets/master/scripts/heatmaps_in_r.R)
 
 
