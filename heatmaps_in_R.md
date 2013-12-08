@@ -57,7 +57,7 @@ Following this paragraph you see the whole shebang so that you know what you are
 	#########################################################
 
 	# creates a own color palette from red to green
-	my_palette <- colorRampPalette(c("red", "yellow", "green"))(n = 299)
+	my_palette &lt;- colorRampPalette(c("red", "yellow", "green"))(n = 299)
 
 	# (optional) defines the color breaks manually for a "skewed" color transition
 	col_breaks = c(seq(-1,0,length=100),  # for red
@@ -138,18 +138,18 @@ measurement10,0.9761,0.4355,0.8663,0.8107
 [(download the CSV file)](https://raw.github.com/rasbt/tutorials_cheatsheets/master/datasets/heatmaps_in_r.csv)
 
 When we are reading the data from our CSV file into R and assign it to the variable `data`, note the two lines of comments preceding the main data in our CSV file, indicated by an octothorpe (#) character. Since we don't need those lines to plot our heat map, we can ignore them by via the `comment.char`  argument in the `read.csv()` function.
-<pre>data <- read.csv("../datasets/heatmaps_in_r.csv", comment.char="#")</pre>
+<pre>data &lt;- read.csv("../datasets/heatmaps_in_r.csv", comment.char="#")</pre>
 
 One tricky part of the `heatmap.2()` function is that it requires the data in a numerical matrix format in order to plot it.  By default, data that we read from files using R's `read.table()` or `read.csv()` functions is stored in a `data table` format. The `matrix` format differs from the `data table` format by the fact that a `matrix` can only hold one type of data, e.g., numerical, strings, or logical.  
 Fortunately, we don't have to worry about the row that contains our column names (var1, var2, var3, var4) since the `read.csv()` function treats the first line of data as `table header` by default. But we would run into trouble if we want to include the row names (measurement1, measurment2, etc.) in our numerical matrix.   
 For our own convenience, we store those row names in the first column as variable `rnames`, which we can use later to assign `row names` to our matrix after the conversion.
-<pre> rnames <- data[,1]  </pre>
+<pre> rnames &lt;- data[,1]  </pre>
 
 Now, we transform the numerical data from the variable `data` (column 2 to 5) into a matrix and assign it to a new variable `mat_data`
-<pre>mat_data <- data.matrix(data[,2:ncol(data)])</pre>
+<pre>mat_data &lt;- data.matrix(data[,2:ncol(data)])</pre>
 Instead of using the rather fiddly expression `ncol(data)]`, which returns the total number of columns from the data table,  we could also provide the integer 5 directly in order to specify the last column that we want to include. However, `ncol(data)]` is more convenient for larger data sets so that we don't need to count all columns to get the index of the last column for specifying the upper boundary.  
 Next, we assign the column names, which we have saved as `rnames` previously, to the matrix via
-<pre>rownames(mat_data) <- rnames </pre>
+<pre>rownames(mat_data) &lt;- rnames </pre>
 
 <a name="customizing"></a>
 ### C) Customizing and plotting the heat map
@@ -159,7 +159,7 @@ Finally, we have our data in the "right" format in order to create our heat map,
 #### Optional: Choosing custom color palettes and color breaks 
 
 Instead of using the default colors of the `heatmap.2()` function, I want to show you how to use the `RColorBrewer` package for creating our own color palettes. Here, we go with the most popular choice for heat maps: A color range from green over yellow to red.
-<pre>my_palette <- colorRampPalette(c("red", "yellow", "green"))(n = 299)</pre>
+<pre>my_palette &lt;- colorRampPalette(c("red", "yellow", "green"))(n = 299)</pre>
 There are many different ways to specify colors in R. I find it most convenient to assign colors by their name. A nice overview of the different color names in R can be found at (http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf)[http://www.stat.columbia.edu/~tzheng/files/Rcolor.pdf]  
 
 The argument `(n = 299)` lets us define how many individuals colors we want to have in our palette. Obviously, the higher the number of individual colors, the smoother the transition will be; the number 299 should be sufficiently large enough for a smooth transition.  
