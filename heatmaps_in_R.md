@@ -28,7 +28,7 @@ Following this paragraph you see the whole shebang so that you know what you are
 # Script overview
 
 
-<blockquote>
+
 <pre>
 	#########################################################
 	### A) Installing and loading required packages
@@ -47,10 +47,10 @@ Following this paragraph you see the whole shebang so that you know what you are
 	### B) Reading in data and transform it into matrix format
 	#########################################################
 
-	data <- read.csv("../datasets/heatmaps_in_r.csv", comment.char="#")
-	rnames <- data[,1]                            # assign labels in column 1 to "rnames"
-	mat_data <- data.matrix(data[,2:ncol(data)])  # transform column 2-5 into a matrix
-	rownames(mat_data) <- rnames                  # assign row names 
+	data \<- read.csv("../datasets/heatmaps_in_r.csv", comment.char="#")
+	rnames \<- data[,1]                            # assign labels in column 1 to "rnames"
+	mat_data \<- data.matrix(data[,2:ncol(data)])  # transform column 2-5 into a matrix
+	rownames(mat_data) \<- rnames                  # assign row names 
 
 	#########################################################
 	### C) Customizing and plotting the heat map
@@ -85,7 +85,7 @@ Following this paragraph you see the whole shebang so that you know what you are
 
 	dev.off()               # close the PNG device
 </pre>
-</blockquote>
+
 
 [(download the script)](https://raw.github.com/rasbt/tutorials_cheatsheets/master/scripts/heatmaps_in_r.R)
 
