@@ -28,6 +28,7 @@ Following this paragraph you see the whole shebang so that you know what you are
 # Script overview
 
 <pre>
+<blockquote>
 	#########################################################
 	### A) Installing and loading required packages
 	#########################################################
@@ -82,6 +83,7 @@ Following this paragraph you see the whole shebang so that you know what you are
   		Colv="NA")            # turn off column clustering
 
 	dev.off()               # close the PNG device
+</blockquote>
 </pre>
 [(download the script)](https://raw.github.com/rasbt/tutorials_cheatsheets/master/scripts/heatmaps_in_r.R)
 
