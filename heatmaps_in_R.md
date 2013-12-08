@@ -47,10 +47,10 @@ Following this paragraph you see the whole shebang so that you know what you are
 	### B) Reading in data and transform it into matrix format
 	#########################################################
 
-	data \<- read.csv("../datasets/heatmaps_in_r.csv", comment.char="#")
-	rnames \<- data[,1]                            # assign labels in column 1 to "rnames"
-	mat_data \<- data.matrix(data[,2:ncol(data)])  # transform column 2-5 into a matrix
-	rownames(mat_data) \<- rnames                  # assign row names 
+	data &lt;- read.csv("../datasets/heatmaps_in_r.csv", comment.char="#")
+	rnames &lt;- data[,1]                            # assign labels in column 1 to "rnames"
+	mat_data &lt;- data.matrix(data[,2:ncol(data)])  # transform column 2-5 into a matrix
+	rownames(mat_data) &lt;- rnames                  # assign row names 
 
 	#########################################################
 	### C) Customizing and plotting the heat map
