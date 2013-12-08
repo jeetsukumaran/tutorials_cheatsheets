@@ -15,9 +15,9 @@ I chose R, because it is one of the most popular free statistical software packa
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Optional: Saving the heat map as PNG file](#png)<br>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Plotting the heat map](#plotting)<br>
 
-The files that I used can be downloaded from here:
-example dataset: heatmaps_in_r.csv
-R script: heatmaps_in_r.R
+The files that I used can be downloaded from here:<br>
+Example dataset: [heatmaps_in_r.csv](https://raw.github.com/rasbt/tutorials_cheatsheets/master/datasets/heatmaps_in_r.csv)<br>
+R script: [heatmaps_in_r.R](https://raw.github.com/rasbt/tutorials_cheatsheets/master/scripts/heatmaps_in_r.R)<br>
 
 
 ![heatmap.png](./images/heatmaps_in_r.png "heatmap.png")
@@ -85,14 +85,17 @@ heatmap.2(mat_data,
 
 dev.off()               # close the PNG device
 </pre>
+[(download the script)](https://raw.github.com/rasbt/tutorials_cheatsheets/master/scripts/heatmaps_in_r.R)
+
 
 <a name="running_script"></a>
 # Running a script in R
 To run a script in R, start  a new R session by either typing R into a shell terminal, or execute R from you Applications folder. Now, you can type the following command in R to execute a script:
-source("path/to/the/script/heatmaps_in_R.R")
+<pre>source("path/to/the/script/heatmaps_in_R.R")</pre>
 
 <a name="script_details"></a>
 # Script parameters in more detail
+
 <a name="installing"></a>
 ### A) Installing and loading required packages
 At first glance, this section might look a little bit more complicated then it need be, since executing `library(packagename)` is already sufficient to load required R packages if they are already installed.
@@ -130,7 +133,7 @@ measurement8,-0.227,0.499,0.3067,0.3289
 measurement9,0.7365,-0.0872,-0.069,-0.4252
 measurement10,0.9761,0.4355,0.8663,0.8107
 </pre>
-(download csv file)
+[(download the CSV file)](https://raw.github.com/rasbt/tutorials_cheatsheets/master/datasets/heatmaps_in_r.csv)
 
 When we are reading the data from our CSV file into R and assign it to the variable `data`, note the two lines of comments preceding the main data in our CSV file, indicated by an octothorpe (#) character. Since we don't need those lines to plot our heat map, we can ignore them by via the `comment.char`  argument in the `read.csv()` function.
 <pre>data <- read.csv("../datasets/heatmaps_in_r.csv", comment.char="#")</pre>
