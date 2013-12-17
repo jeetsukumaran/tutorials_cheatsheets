@@ -6,7 +6,7 @@ if (!require("gplots")) {
    install.packages("gplots", dependencies = TRUE)
    library(gplots)
    }
-if (!require("gplots")) {
+if (!require("RColorBrewer")) {
    install.packages("RColorBrewer", dependencies = TRUE)
    library(RColorBrewer)
    }
