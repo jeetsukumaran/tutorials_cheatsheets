@@ -13,7 +13,7 @@ Installing NumPy should be straight forward now using `pip`
 
 The installation will probably take a few minutes due to the source files that have to be compiled for your machine. Once it is installed, `NumPy` should be available in Python via
 
-```import numpy```
+<pre>import numpy</pre>
 
 If you want to see a few examples of how to operate with NumPy arrays, you can check out my [Matrix Cheatsheet for Moving from MATLAB matrices to NumPy arrays](http://sebastianraschka.com/Articles/2014_matlab_vs_numpy.html)
 
