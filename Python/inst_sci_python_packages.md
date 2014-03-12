@@ -54,7 +54,7 @@ Among other information, we will see the current version, e.g.,
 #### Installing SciPy
 
 Now, we should be good to go to install `SciPy` using `pip`.  
-</pre>python3 -m pip install scipy</pre>
+<pre>python3 -m pip install scipy</pre>
 
 After it was successfully installed - might also take a couple of minutes due to the source code compilation - it should be available in Python via  
 <pre>import scipy</pre>
