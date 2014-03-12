@@ -2,14 +2,14 @@
 
 ## Installing pip
 If you haven't installed the `pip` package for your version of Python, yet, I'd suggest to download it from [https://pypi.python.org/pypi/pip](https://pypi.python.org/pypi/pip), unzip it, and install it from the unzipped directory via 
-```python3 setup.py install```
+<pre>python3 setup.py install</pre>
 
 
 ## Installing NumPy
 
 Installing NumPy should be straight forward now using `pip`
 
-```python3 -m pip install numpy```
+<pre>python3 -m pip install numpy</pre>
 
 The installation will probably take a few minutes due to the source files that have to be compiled for your machine. Once it is installed, `NumPy` should be available in Python via
 
@@ -27,27 +27,27 @@ For example, `gfortran` for MacOS 10.9 can be downloaded from [http://coudert.na
 
 Once you installed it, it should be available from the command line, you can test it by typing
 
-```gfortran -v```
+<pre>gfortran -v</pre>
 Among other information, you will see the current version, e.g.,   
-```gcc version 4.8.2 (GCC) ```
+<pre>gcc version 4.8.2 (GCC)</pre>
 
 #### Installing SciPy
 
 Now, we should be good to go to install `SciPy` using `pip`.  
-```python3 -m pip install scipy```
+</pre>python3 -m pip install scipy</pre>
 
 After it was successfully installed - might also take a couple of minutes due to the source code compilation - it should be available in Python via  
-```import scipy```
+<pre>import scipy</pre>
 
 ## Installing matplotlib
 
 The installation process for matplotlib should go very smoothly using `pip`, I haven't encountered any hurdles here.
 
-```python3 -m pip install matplotlib```
+<pre>python3 -m pip install matplotlib</pre>
 
 After successful installation, it can be imported in Python via
 
-```import matplotlib```
+<pre>import matplotlib</pre>
 
 The `matplotlib` library has become my favorite data plotting tool recently, you can check out some examples in my little matplotlib-gallery on GitHub: [https://github.com/rasbt/matplotlib_gallery](https://github.com/rasbt/matplotlib_gallery)
 
@@ -57,7 +57,7 @@ The `matplotlib` library has become my favorite data plotting tool recently, you
 
 The IPython kernel requires the `pyzmq` package to run, `pyzmq` contains Python bindings for ØMQ, which is a lightweight and fast messaging implementation. It can be installed via `pip`.  
 
-```python3 -m pip install pyzmq```
+<pre>python3 -m pip install pyzmq</pre>
 
 
 #### Installing pyside
@@ -71,7 +71,7 @@ http://qt-project.org/downloads
 
 Now, I could finally install IPython with all its further dependencies (pygments, Sphinx, jinja2, docutils, markupsafe) via  
 
-```python3 -m pip install ipython[all]```
+<pre>python3 -m pip install ipython[all]</pre>
 
 By doing this, we would install IPython to a custom location, e.g., `/Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/site-packages/IPython`. 
 
@@ -82,7 +82,7 @@ You can find the path to this location by importing IPython in Python and then p
 
 Finally, we can set an `alias` in our `.bash_profile` or `.bash_rc` file to conviniently run IPython from the console. E.g., 
 
-```alias ipython3="python3 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/site-packages/IPython/terminal/ipapp.py"```  
+<pre>alias ipython3="python3 /Library/Frameworks/Python.framework/Versions/3.3/lib/python3.3/site-packages/IPython/terminal/ipapp.py"</pre>
 
 (Don't forget to `source` the `.bash_rc` or `.bash_profile` file afterwards)
 
