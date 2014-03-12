@@ -88,9 +88,14 @@ Finally, we can set an `alias` in our `.bash_profile` or `.bash_rc` file to conv
 
 Now you can run   
 
+
 ```ipython3```
+
 
 from you shell terminal to launch the interactive IPython shell, and   
 
+
 ```ipython3 notebook```  
+
+
 to bring up the awesome IPython notebook in your browser, respectively.
