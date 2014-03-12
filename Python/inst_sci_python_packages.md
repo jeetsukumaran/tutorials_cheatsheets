@@ -16,6 +16,7 @@ If you encounter any different or additional obstacles let me know, and please f
 <a name="pip"></a>
 <br>
 ## Installing pip
+`pip` is a tool for installing and managing Python packages. It makes the installation process for Python packages a lot easier, since they don't have to be downloaded manually.  
 If you haven't installed the `pip` package for your version of Python, yet, I'd suggest to download it from [https://pypi.python.org/pypi/pip](https://pypi.python.org/pypi/pip), unzip it, and install it from the unzipped directory via 
 <pre>python3 setup.py install</pre>
 
