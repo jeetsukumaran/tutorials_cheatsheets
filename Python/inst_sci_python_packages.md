@@ -13,6 +13,7 @@ If you encounter any different or additional obstacles let me know, and please f
 &#8226; [Installing SciPy](#scipy)<br>
 &#8226; [Installing matplotlib](#matplotlib)<br>
 &#8226; [Installing IPython](#ipython)<br>
+&#8226; [Updating installed packages](#updating)<br>
 
 <br>
 <hr>
@@ -21,7 +22,7 @@ If you encounter any different or additional obstacles let me know, and please f
 <br>
 <br>
 ## Consider a virtual environment
-
+<br>
 Alternatively, in order to not mess around with our system packages, we can consider setting up an virtual environment when we want to install the additional scientific packages.   
 To set up a new virtual environment, we can use the following command
 
@@ -37,6 +38,7 @@ and activate it via
 <br>
 <br>
 ## Installing pip
+<br>
 `pip` is a tool for installing and managing Python packages. It makes the installation process for Python packages a lot easier, since they don't have to be downloaded manually.  
 If you haven't installed the `pip` package for your version of Python, yet, I'd suggest to download it from [https://pypi.python.org/pypi/pip](https://pypi.python.org/pypi/pip), unzip it, and install it from the unzipped directory via 
 <pre>[bash$]> python3 setup.py install</pre>
@@ -46,7 +48,7 @@ If you haven't installed the `pip` package for your version of Python, yet, I'd 
 <br>
 <br>
 ## Installing NumPy
-
+<br>
 Installing NumPy should be straight forward now using `pip`
 
 <pre>[bash$]> python3 -m pip install numpy</pre>
@@ -62,7 +64,7 @@ If you want to see a few examples of how to operate with NumPy arrays, you can c
 <br>
 <br>
 ## Installing SciPy
-
+<br>
 While the `clang` compiler worked fine for compiling the C source code for `numpy`, we now need an additional Fortran compiler in order to install `scipy`.   
 
 <br>
@@ -90,7 +92,7 @@ After it was successfully installed - might also take a couple of minutes due to
 <br>
 <br>
 ## Installing matplotlib
-
+<br>
 The installation process for matplotlib should go very smoothly using `pip`, I haven't encountered any hurdles here.
 
 <pre>[bash$]> python3 -m pip install matplotlib</pre>
@@ -161,3 +163,14 @@ from you shell terminal to launch the interactive IPython shell, and
 
 
 to bring up the awesome IPython notebook in our browser, respectively.
+
+
+<a name="updating"></a>
+<br>
+<br>
+
+## Updating installed packages
+<br>
+Finally, if we want to keep our freshly installed packages up to date, we'd run `pip` with the `--update` flag, for example
+
+<pre>[bash$]> python3 -m pip install numpy --upgrade </pre>
