@@ -5,6 +5,7 @@ If you encounter any different or additional obstacles let me know, and please f
 
 ![](../images/python_sci_pack_ing.png)
 
+<hr>
 ####Sections
 &#8226; [Consider a virtual environment](#venv)<br>
 &#8226; [Installing pip](#pip)<br>
@@ -13,8 +14,11 @@ If you encounter any different or additional obstacles let me know, and please f
 &#8226; [Installing matplotlib](#matplotlib)<br>
 &#8226; [Installing IPython](#ipython)<br>
 
-
+<br>
+<hr>
+<br>
 <a name="venv"></a>
+<br>
 <br>
 ## Consider a virtual environment
 
@@ -31,6 +35,7 @@ and activate it via
 
 <a name="pip"></a>
 <br>
+<br>
 ## Installing pip
 `pip` is a tool for installing and managing Python packages. It makes the installation process for Python packages a lot easier, since they don't have to be downloaded manually.  
 If you haven't installed the `pip` package for your version of Python, yet, I'd suggest to download it from [https://pypi.python.org/pypi/pip](https://pypi.python.org/pypi/pip), unzip it, and install it from the unzipped directory via 
@@ -38,6 +43,7 @@ If you haven't installed the `pip` package for your version of Python, yet, I'd 
 
 
 <a name="numpy"></a>
+<br>
 <br>
 ## Installing NumPy
 
@@ -54,10 +60,12 @@ If you want to see a few examples of how to operate with NumPy arrays, you can c
 
 <a name="scipy"></a>
 <br>
+<br>
 ## Installing SciPy
 
 While the `clang` compiler worked fine for compiling the C source code for `numpy`, we now need an additional Fortran compiler in order to install `scipy`.   
 
+<br>
 #### Installing a Fortran Compiler
 Unfortunately, MacOS 10.9 Mavericks doesn't come with a Fortran compiler, but it is pretty easy to download and install one.  
 For example, `gfortran` for MacOS 10.9 can be downloaded from [http://coudert.name/software/gfortran-4.8.2-Mavericks.dmg](http://coudert.name/software/gfortran-4.8.2-Mavericks.dmg)
@@ -68,6 +76,7 @@ Just double-click on the downloaded .DMG container and follow the familiar MacOS
 Among other information, we will see the current version, e.g.,   
 <pre>gcc version 4.8.2 (GCC)</pre>
 
+<br>
 #### Installing SciPy
 
 Now, we should be good to go to install `SciPy` using `pip`.  
@@ -78,6 +87,7 @@ After it was successfully installed - might also take a couple of minutes due to
 
 
 <a name="matplotlib"></a>
+<br>
 <br>
 ## Installing matplotlib
 
@@ -94,15 +104,17 @@ The `matplotlib` library has become my favorite data plotting tool recently, you
 
 <a name="ipython"></a>
 <br>
+<br>
 ## Installing IPython
 
+<br>
 #### Installing pyzmq
 
 The IPython kernel requires the `pyzmq` package to run, `pyzmq` contains Python bindings for ØMQ, which is a lightweight and fast messaging implementation. It can be installed via `pip`.  
 
 <pre>[bash$]> python3 -m pip install pyzmq</pre>
 
-
+<br>
 #### Installing pyside
 
 When I was trying to install the `pyside` package, I had it complaining about the missing `cmake`. It can be downloaded from:
@@ -117,7 +129,7 @@ into the command line where it would print something like
 <pre>cmake version 2.8.12.2</pre>
 
 
-
+<br>
 #### Installing IPython
 
 Now, we should finally be able to install IPython with all its further dependencies (pygments, Sphinx, jinja2, docutils, markupsafe) via  
