@@ -3,6 +3,8 @@
 I just went through some pain (again) when I wanted to install some of Python's scientific libraries on my second Mac. I summarized the setup and installation process for future reference.  
 If you encounter any different or additional obstacles let me know, and please feel free to make any suggestions to improve this short walkthrough.
 
+![](../images/python_sci_pack_ing.png)
+
 ####Sections
 &#8226; [Consider a virtual environment](#venv)<br>
 &#8226; [Installing pip](#pip)<br>
