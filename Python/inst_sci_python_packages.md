@@ -171,6 +171,6 @@ to bring up the awesome IPython notebook in our browser, respectively.
 
 ## Updating installed packages
 <br>
-Finally, if we want to keep our freshly installed packages up to date, we'd run `pip` with the `--update` flag, for example
+Finally, if we want to keep our freshly installed packages up to date, we'd run `pip` with the `--upgrate` flag, for example
 
 <pre>[bash$]> python3 -m pip install numpy --upgrade </pre>
