@@ -16,7 +16,8 @@ If you encounter any different or additional obstacles let me know, and please f
 <br>
 ## Consider a virtual environment
 
-Alternatively, to don't mess with our system packages, we can consider setting up an virtual environment where we want to install the additional scientific packages. To set up a new virtual environment, we can use the following command
+Alternatively, in order to not mess around with our system packages, we can consider setting up an virtual environment when we want to install the additional scientific packages.   
+To set up a new virtual environment, we can use the following command
 
 <pre>python3 -m venv /path_to/my_virtual_env</pre>
 
