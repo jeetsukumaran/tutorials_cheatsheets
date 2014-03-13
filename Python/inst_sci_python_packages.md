@@ -4,12 +4,25 @@ I just went through some pain (again) when I wanted to install some of Python's 
 If you encounter any different or additional obstacles let me know, and please feel free to make any suggestions to improve this short walkthrough.
 
 ####Sections
+&#8226; [Consider a virtual environment](#venv)<br>
 &#8226; [Installing pip](#pip)<br>
 &#8226; [Installing NumPy](#numpy)<br>
 &#8226; [Installing SciPy](#scipy)<br>
 &#8226; [Installing matplotlib](#matplotlib)<br>
 &#8226; [Installing IPython](#ipython)<br>
 
+
+<a name="venv"></a>
+<br>
+## Consider a virtual environment
+
+Alternatively, to don't mess with our system packages, we can consider setting up an virtual environment where we want to install the additional scientific packages. To set up a new virtual environment, we can use the following command
+
+<pre>python3 -m venv /path_to/my_virtual_env</pre>
+
+and activate it via
+
+<pre>source /path_to/my_virtual_env/bin/activate</pre>
 
 
 
